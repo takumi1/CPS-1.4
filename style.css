@@ -210,7 +210,7 @@ body {
     border: none;
 }
 .menu-footer__call-button {
-    background-image: url('img/icons/call.svg');
+    background-image: url('https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/call.svg');
 }
 .menu-footer__message-button {
     background-image: url('/img/icons/message.svg');
