@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Bold.woff') format('woff'),
+    url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Medium.woff') format('woff'),
+    url('TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Regular.woff') format('woff'),
+    url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Общие стили */
+body {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    width: 320px;
+    float: left;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.button:hover {
+    background-color: #ed396f;
+    transform: scale(1.1);
+    transition: .3s;
+
+}
+.main {
+    background-color: #F8F8F8;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    flex: 0 0 auto;
+    padding-top: 18px;
+}
+
+.header__request-button {
+    background-image: url("/img/icons/request.svg");
+    margin-top: 6px;
+}
+
+.header__menu-button {
+    background-image: url("/img/icons/menu.svg");
+    margin-top: 6px;
+    margin-left: 16px;
+}
+
+.header__status-button {
+    background-image: url("/img/icons/status.svg");
+    margin-top: 6px;
+    margin-right: 16px;
+}
+
+.header__call-button {
+    display: none;
+}
+
+.header__message-button {
+    display: none;
+}
+
+.header__account-button {
+    display: none;
+}
+.header__close-button {
+    background-image: url("/img/icons/close.svg");
+    flex-grow: 1;
+    margin-left: 24px;
+    margin-right: 16px;
+    max-width: 40px;
+    margin-top: 6px;
+}
+.header__search-button {
+    background-image: url("/img/icons/search.svg");
+    flex-grow: 2;
+    max-width: 40px;
+    margin-left: 78px;
+    margin-right: 24px;
+    margin-top: 6px;
+}
+
+.header__logo {
+    width: 96px;
+    height: 50px;
+    background-image: url("/img/icons/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+}
+
+.header__divider {
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    margin-top: 10px;
+}
+
+.header__divider_768 {
+    display: none;
+}
+
+.services-header__option-buttons {
+    display: none;
+}
+.main-menu__menu ul {
+    list-style-type: none;
+    font-weight: 500;
+    margin-top: 30px;
+    padding-left: 24px;
+}
+.main-menu__menu ul li {
+    padding-bottom: 24px;
+    cursor: pointer;
+}
+.main-menu__menu:before {
+    content: '';
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-menu {
+    flex: 1 0 auto;
+}
+.menu-footer {
+    flex: 0 0 auto;
+    margin-left: 24px;
+
+}
+.menu-footer__contact-buttons {
+    display: flex;
+
+}
+.menu-footer__call-button {
+    margin-right: 16px;
+}
+.menu-footer__message-button {
+    margin-right: 16px;
+}
+.menu-footer__account-button {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.menu-footer__email {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.menu-footer__phone {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.menu-footer__languages {
+    margin-bottom: 32px;
+}
+.menu-footer__language-button {
+    background: white;
+    border: none;
+}
+.menu-footer__call-button {
+    background-image: url('/img/icons/call.svg');
+}
+.menu-footer__message-button {
+    background-image: url('/img/icons/message.svg');
+}
+.menu-footer__account-button {
+    background-image: url('/img/icons/account.svg');
+}
+.menu-footer__language-button_active {
+    color: #7E7E82;
+}
