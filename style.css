@@ -60,12 +60,14 @@ body {
     cursor: pointer;
     transition: .3s;
 }
+
 .button:hover {
     background-color: #ed396f;
     transform: scale(1.1);
     transition: .3s;
 
 }
+
 .main {
     background-color: #F8F8F8;
 }
@@ -82,18 +84,18 @@ body {
 }
 
 .header__request-button {
-    background-image: url("/img/icons/request.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/request.svg");
     margin-top: 6px;
 }
 
 .header__menu-button {
-    background-image: url("/img/icons/menu.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/menu.svg");
     margin-top: 6px;
     margin-left: 16px;
 }
 
 .header__status-button {
-    background-image: url("/img/icons/status.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/status.svg");
     margin-top: 6px;
     margin-right: 16px;
 }
@@ -109,16 +111,18 @@ body {
 .header__account-button {
     display: none;
 }
+
 .header__close-button {
-    background-image: url("/img/icons/close.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/close.svg");
     flex-grow: 1;
     margin-left: 24px;
     margin-right: 16px;
     max-width: 40px;
     margin-top: 6px;
 }
+
 .header__search-button {
-    background-image: url("/img/icons/search.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/search.svg");
     flex-grow: 2;
     max-width: 40px;
     margin-left: 78px;
@@ -129,7 +133,7 @@ body {
 .header__logo {
     width: 96px;
     height: 50px;
-    background-image: url("/img/icons/logo.svg");
+    background-image: url("https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     flex-grow: 1;
@@ -149,16 +153,30 @@ body {
 .services-header__option-buttons {
     display: none;
 }
+
 .main-menu__menu ul {
     list-style-type: none;
     font-weight: 500;
     margin-top: 30px;
     padding-left: 24px;
 }
+
 .main-menu__menu ul li {
     padding-bottom: 24px;
     cursor: pointer;
+
+    white-space: nowrap;
 }
+
+.main-menu__menu ul li span {
+    transition: .2s;
+}
+
+.main-menu__menu ul li span:hover {
+    color: #7E7E82;
+    transition: .2s;
+}
+
 .main-menu__menu:before {
     content: '';
     position: absolute;
@@ -170,54 +188,68 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 .main-menu {
     flex: 1 0 auto;
 }
+
 .menu-footer {
     flex: 0 0 auto;
     margin-left: 24px;
 
 }
+
 .menu-footer__contact-buttons {
     display: flex;
 
 }
+
 .menu-footer__call-button {
     margin-right: 16px;
 }
+
 .menu-footer__message-button {
     margin-right: 16px;
 }
+
 .menu-footer__account-button {
     margin-right: 16px;
     margin-bottom: 16px;
 }
+
 .menu-footer__email {
     margin-bottom: 12px;
     font-size: 16px;
     font-weight: 500;
 }
+
 .menu-footer__phone {
     margin-bottom: 40px;
     font-size: 24px;
     font-weight: 700;
 }
+
 .menu-footer__languages {
     margin-bottom: 32px;
 }
+
 .menu-footer__language-button {
     background: white;
     border: none;
 }
+
 .menu-footer__call-button {
     background-image: url('https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/call.svg');
 }
+
 .menu-footer__message-button {
-    background-image: url('/img/icons/message.svg');
+    background-image: url('https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/message.svg');
 }
+
 .menu-footer__account-button {
-    background-image: url('/img/icons/account.svg');
+    background-image: url('https://raw.githubusercontent.com/takumi1/CPS-1.4/master/img/icons/account.svg');
 }
+
 .menu-footer__language-button_active {
     color: #7E7E82;
 }
