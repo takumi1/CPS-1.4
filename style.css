@@ -236,6 +236,13 @@ body {
 .menu-footer__language-button {
     background: white;
     border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.menu-footer__language-button:hover {
+    color: grey;
+    transition: .2s;
 }
 
 .menu-footer__call-button {
